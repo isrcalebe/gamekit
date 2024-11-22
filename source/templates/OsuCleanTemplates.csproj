@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Project">
+    <TargetFramework>net8.0</TargetFramework>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <NoWarn>NU5128</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Label="NuGet">
+    <PackageType>Template</PackageType>
+    <PackageId>isrcalebe.OsuCleanTemplates</PackageId>
+    <PackageTags>dotnet-new;templates;osu;framework</PackageTags>
+    <Title>osu!framework clean templates</Title>
+  </PropertyGroup>
+  <ItemGroup Label="Content Group">
+    <Content Include="samples\**\*" Exclude="samples\**\bin\**;samples\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+</Project>

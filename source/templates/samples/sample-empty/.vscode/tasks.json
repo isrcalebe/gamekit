@@ -1,0 +1,56 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build (Desktop, Debug)",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}/source/"
+      },
+      "command": "dotnet",
+      "args": [
+        "build",
+        "-p:GenerateFullPaths=true",
+        "-m",
+        "-verbosity:m",
+        "platforms/desktop"
+      ],
+      "group": "build",
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Build (Desktop, Release)",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}/source/"
+      },
+      "command": "dotnet",
+      "args": [
+        "build",
+        "-p:Configuration=Release",
+        "-p:GenerateFullPaths=true",
+        "-m",
+        "-verbosity:m",
+        "platforms/desktop"
+      ],
+      "group": "build",
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Clean",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}/source/"
+      },
+      "command": "dotnet",
+      "args": [
+        "clean",
+        "-p:GenerateFullPaths=true",
+        "-m",
+        "-verbosity:m"
+      ],
+      "group": "build",
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}

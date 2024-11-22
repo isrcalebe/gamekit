@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Israel Calebe",
+  "classifications": [ "Console" ],
+  "name": "osu!framework clean empty game template",
+  "identity": "isrcalebe.OsuCleanTemplates.Samples.Empty",
+  "shortName": "of-clean-empty",
+  "tags": {
+    "language": "C#",
+    "type":"project"
+  },
+  "sourceName": "SampleGame",
+  "preferNameDirectory": true,
+  "symbols": {
+    "PreferNearestTextureFiltering": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "When enabled, all textures loaded into the global TextureStore are nearest filtered.",
+      "value": false
+    },
+    "SkipVisualTests": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "When enabled, the visual testing project is not created.",
+      "value": false
+    },
+    "SkipBuildSettings": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "When enabled, the build settings is not created.",
+      "value": false
+    },
+    "KebabCaseGameName": {
+      "type": "derived",
+      "valueSource": "name",
+      "valueTransform": "kebabCase",
+      "replaces": "KebabCaseGameName"
+    }
+  },
+  "sources": [{
+    "modifiers": [
+      {
+        "condition": "(SkipVisualTests)",
+        "exclude": [ "source/tests/**/*"]
+      },
+      {
+        "condition": "(SkipBuildSettings)",
+        "exclude": [
+          ".vscode/**/*",
+          "source/.idea/**/*"
+        ]
+      }]
+  }]
+}

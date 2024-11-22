@@ -1,0 +1,36 @@
+name: Package and NuGet
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  pack-template:
+    name: Pack (Templates)
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set artifacts Directory
+        id: artifactsPath
+        run: echo "::set-output name=NUGET_ARTIFACTS::${{github.workspace}}/artifacts"
+
+      - name: Install .NET 8.0.x
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Pack (Template)
+        run: dotnet pack -c Release source/templates /p:Configuration=Release /p:Version=${{ github.ref_name }} /p:GenerateDocumentationFile=true /p:NoDefaultExcludes=true -o ${{steps.artifactsPath.outputs.nuget_artifacts}}
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: osu-framework-templates
+          path: ${{steps.artifactsPath.outputs.nuget_artifacts}}/*.nupkg
+
+      - name: Publish packages to nuget.org
+        run: dotnet nuget push ${{steps.artifactsPath.outputs.nuget_artifacts}}/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
