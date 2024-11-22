@@ -4,4 +4,13 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>disable</ImplicitUsings>
   </PropertyGroup>
+  <PropertyGroup Label="NuGet">
+    <Authors>Israel Calebe</Authors>
+    <Copyright>Copyright (c) 2024 Israel Calebe</Copyright>
+    <Product>OsuCleanTemplates</Product>
+    <PackageReleaseNotes>Automated release.</PackageReleaseNotes>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/isrcalebe/osu-clean-templates</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/isrcalebe/osu-clean-templates</RepositoryUrl>
+  </PropertyGroup>
 </Project>
