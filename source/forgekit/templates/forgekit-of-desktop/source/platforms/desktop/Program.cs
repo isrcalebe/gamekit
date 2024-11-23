@@ -1,7 +1,7 @@
 ﻿using SampleGame.Desktop;
 using osu.Framework;
 
-using var host = Host.GetSuitableDesktopHost("KebabCaseGameName", new HostOptions
+using var host = Host.GetSuitableDesktopHost("SPC_KB_ProjectName", new HostOptions
 {
     FriendlyGameName = "SampleGame"
 });

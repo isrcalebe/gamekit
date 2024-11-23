@@ -7,7 +7,7 @@ namespace SampleGame.Game.Configuration;
 
 public class SampleGameConfigManager : IniConfigManager<SampleGameSetting>
 {
-    protected override string Filename => "KebabCaseGameName.ini";
+    protected override string Filename => "SPC_KB_ProjectName.ini";
 
     public SampleGameConfigManager(Storage storage, IDictionary<SampleGameSetting, object>? defaultOverrides = null)
         : base(storage, defaultOverrides)

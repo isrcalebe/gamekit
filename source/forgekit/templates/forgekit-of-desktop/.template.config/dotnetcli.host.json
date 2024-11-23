@@ -1,0 +1,28 @@
+{
+  "symbolInfo": {
+    "PreferNearestTextureFiltering": {
+      "longName": "prefer-nearest-texture-filtering",
+      "shortName": "nearest-filtering"
+    },
+    "SkipVisualTests": {
+      "longName": "skip-visual-tests",
+      "shortName": "no-tests"
+    },
+    "SkipBuildSettings": {
+      "longName": "skip-build-settings",
+      "shortName": "no-build-settings"
+    },
+    "IncludeFontInter": {
+      "longName": "include-font-inter",
+      "shortName": "font-inter"
+    },
+    "IncludeFontMonogram": {
+      "longName": "include-font-monogram",
+      "shortName": "font-monogram"
+    },
+    "IncludeFontSMW": {
+      "longName": "include-font-smw",
+      "shortName": "font-smw"
+    }
+  }
+}

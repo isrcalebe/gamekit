@@ -32,10 +32,39 @@ public abstract partial class SampleGameGameBase : osu.Framework.Game
     private void load()
     {
         Resources.AddStore(new DllResourceStore(SampleGameResourceAssemblyProvider.Assembly));
+#if (CMP_HasFonts)
+
+        addFonts();
+#endif
 
         dependencies?.CacheAs(Storage);
         dependencies?.CacheAs(LocalConfig);
     }
+#if (CMP_HasFonts)
+
+    private void addFonts()
+    {
+#if (IncludeFontInter)
+        foreach (var weight in new[] { "Thin", "ExtraLight", "Light", "Regular", "Medium", "SemiBold", "Bold", "Black" })
+        {
+            AddFont(Resources, $@"Fonts/Inter/Inter-{weight}");
+            AddFont(Resources, $@"Fonts/Inter/Inter-{weight}Italic");
+        }
+#endif
+#if (IncludeFontMonogram)
+
+        AddFont(Resources, @"Fonts/Monogram/Monogram-Regular");
+        AddFont(Resources, @"Fonts/Monogram/Monogram-RegularItalic");
+#endif
+#if (IncludeFontSMW)
+
+        AddFont(Resources, @"Fonts/SMW/SMW-Regular");
+        AddFont(Resources, @"Fonts/SMW/SMW-RegularItalic");
+        AddFont(Resources, @"Fonts/SMW/SMW-Bold");
+        AddFont(Resources, @"Fonts/SMW/SMW-BoldItalic");
+#endif
+    }
+#endif
 
     public override void SetHost(GameHost host)
     {

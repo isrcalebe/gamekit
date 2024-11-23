@@ -30,11 +30,33 @@
       "description": "When enabled, the build settings is not created.",
       "value": false
     },
-    "KebabCaseGameName": {
+    "IncludeFontInter": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "When enabled, the Inter font is added to the resources.",
+      "value": false
+    },
+    "IncludeFontMonogram": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "When enabled, the Monogram font is added to the resources.",
+      "value": false
+    },
+    "IncludeFontSMW": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "When enabled, the SMW font is added to the resources.",
+      "value": false
+    },
+    "SPC_KB_ProjectName": {
       "type": "derived",
       "valueSource": "name",
       "valueTransform": "kebabCase",
-      "replaces": "KebabCaseGameName"
+      "replaces": "SPC_KB_ProjectName"
+    },
+    "CMP_HasFonts": {
+      "type": "computed",
+      "value": "(IncludeFontInter || IncludeFontMonogram || IncludeFontSMW)"
     }
   },
   "sources": [{
@@ -49,6 +71,28 @@
           ".vscode/**/*",
           "source/.idea/**/*"
         ]
+      },
+      {
+        "condition": "(!IncludeFontInter)",
+        "exclude": [ "source/resources/Fonts/Inter/**/*" ]
+      },
+      {
+        "condition": "(!IncludeFontMonogram)",
+        "exclude": [ "source/resources/Fonts/Monogram/**/*" ]
+      },
+      {
+        "condition": "(!IncludeFontSMW)",
+        "exclude": [ "source/resources/Fonts/SMW/**/*" ]
+      }
+    ]
+  }],
+  "constraints": {
+    "sdk-only": {
+      "type": "host",
+      "args": [{
+        "hostname": "dotnetcli",
+        "version": "[8.0,)"
       }]
-  }]
+    }
+  }
 }

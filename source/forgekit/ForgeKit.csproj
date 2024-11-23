@@ -10,8 +10,9 @@
   <PropertyGroup Label="NuGet">
     <PackageType>Template</PackageType>
     <PackageId>ForgeKit</PackageId>
-    <PackageTags>dotnet-new;templates;osu;framework</PackageTags>
-    <Title>ForgeKits</Title>
+    <Description>ForgeKit is a collection of templates for .NET and the osu!framework, providing solid boilerplate with a clean project structure.</Description>
+    <PackageTags>dotnet-new;templates;osu;framework;forgekit</PackageTags>
+    <Title>ForgeKit</Title>
   </PropertyGroup>
   <ItemGroup Label="Content Group">
     <Content Include="templates\**\*" Exclude="samples\**\bin\**;samples\**\obj\**" />
