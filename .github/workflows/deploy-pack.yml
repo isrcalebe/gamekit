@@ -24,7 +24,7 @@ jobs:
           dotnet-version: "8.0.x"
 
       - name: Pack (Template)
-        run: dotnet pack -c Release source/templates /p:Configuration=Release /p:Version=${{ github.ref_name }} /p:GenerateDocumentationFile=true /p:NoDefaultExcludes=true -o ${{steps.artifactsPath.outputs.nuget_artifacts}}
+        run: dotnet pack -c Release source/forgekit /p:Configuration=Release /p:Version=${{ github.ref_name }} /p:GenerateDocumentationFile=true /p:NoDefaultExcludes=true -o ${{steps.artifactsPath.outputs.nuget_artifacts}}
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
@@ -32,5 +32,5 @@ jobs:
           name: forgekit
           path: ${{steps.artifactsPath.outputs.nuget_artifacts}}/*.nupkg
 
-      - name: Publish packages to nuget.org
+      - name: Publish packages to NuGet
         run: dotnet nuget push ${{steps.artifactsPath.outputs.nuget_artifacts}}/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
