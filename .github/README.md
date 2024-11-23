@@ -1,3 +1,14 @@
+<p align='center'>
+  <a href='https://github.com/isrcalebe/forgekit#gh-dark-mode-only' target='_blank' rel='noopener noreferrer'>
+    <img src='./assets/logo-light.svg' alt='isrcalebe/forgekit'>
+  </a>
+  <a href='https://github.com/isrcalebe/forgekit#gh-light-mode-only' target='_blank' rel='noopener noreferrer'>
+    <img src='./assets/logo-dark.svg' alt='isrcalebe/forgekit'>
+  </a>
+</p>
+
+**ForgeKit** is a collection of templates for [.NET](https://dot.net) and the [osu!framework](https://github.com/ppy/osu-framework), providing solid boilerplate with a clean project structure.
+
 # Requirements
 
 - A desktop platform with the [.NET 8.0 SDK](https://dotnet.microsoft.com/download) or higher runtime installed.
