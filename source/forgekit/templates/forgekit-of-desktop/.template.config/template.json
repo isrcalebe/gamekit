@@ -2,9 +2,9 @@
   "$schema": "http://json.schemastore.org/template",
   "author": "Israel Calebe",
   "classifications": [ "Console" ],
-  "name": "osu!framework clean empty game template",
-  "identity": "isrcalebe.OsuCleanTemplates.Samples.Empty",
-  "shortName": "of-clean-empty",
+  "name": "osu!framework desktop empty game",
+  "identity": "ForgeKit.Templates.Desktop",
+  "shortName": "forgekit-of-desktop",
   "tags": {
     "language": "C#",
     "type":"project"

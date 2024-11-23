@@ -9,12 +9,12 @@
   </PropertyGroup>
   <PropertyGroup Label="NuGet">
     <PackageType>Template</PackageType>
-    <PackageId>isrcalebe.OsuCleanTemplates</PackageId>
+    <PackageId>ForgeKit</PackageId>
     <PackageTags>dotnet-new;templates;osu;framework</PackageTags>
-    <Title>osu!framework clean templates</Title>
+    <Title>ForgeKits</Title>
   </PropertyGroup>
   <ItemGroup Label="Content Group">
-    <Content Include="samples\**\*" Exclude="samples\**\bin\**;samples\**\obj\**" />
+    <Content Include="templates\**\*" Exclude="samples\**\bin\**;samples\**\obj\**" />
     <Compile Remove="**\*" />
   </ItemGroup>
 </Project>

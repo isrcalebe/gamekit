@@ -7,10 +7,10 @@
   <PropertyGroup Label="NuGet">
     <Authors>Israel Calebe</Authors>
     <Copyright>Copyright (c) 2024 Israel Calebe</Copyright>
-    <Product>OsuCleanTemplates</Product>
+    <Product>ForgeKit</Product>
     <PackageReleaseNotes>Automated release.</PackageReleaseNotes>
     <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/isrcalebe/osu-clean-templates</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/isrcalebe/osu-clean-templates</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/isrcalebe/ForgeKit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/isrcalebe/ForgeKit</RepositoryUrl>
   </PropertyGroup>
 </Project>
