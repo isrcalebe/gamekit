@@ -9,8 +9,8 @@
     <Copyright>Copyright (c) 2024 Israel Calebe</Copyright>
     <Product>ForgeKit</Product>
     <PackageReleaseNotes>Automated release.</PackageReleaseNotes>
-    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/isrcalebe/ForgeKit</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/isrcalebe/ForgeKit</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/isrcalebe/forgekit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/isrcalebe/forgekit</RepositoryUrl>
   </PropertyGroup>
 </Project>
