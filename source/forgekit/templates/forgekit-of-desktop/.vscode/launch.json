@@ -56,6 +56,34 @@
       "env": {
         "OSU_SDL3": "1"
       }
+    },
+    {
+      "name": "Visual Tests (Debug, SDL2)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "dotnet",
+      "cwd": "${workspaceRoot}/source/",
+      "args": [
+        "${workspaceRoot}/source/tests/game/bin/Debug/net8.0/SampleGame.Game.Tests.dll"
+      ],
+      "preLaunchTask": "Build (Desktop, Debug)",
+      "env": {
+        "OSU_SDL3": "0"
+      }
+    },
+    {
+      "name": "Visual Tests (Debug, SDL3)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "dotnet",
+      "cwd": "${workspaceRoot}/source/",
+      "args": [
+        "${workspaceRoot}/source/tests/game/bin/Debug/net8.0/SampleGame.Game.Tests.dll"
+      ],
+      "preLaunchTask": "Build (Desktop, Debug)",
+      "env": {
+        "OSU_SDL3": "1"
+      }
     }
   ]
 }
