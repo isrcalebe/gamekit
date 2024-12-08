@@ -1,7 +1,7 @@
 using SampleGame.Game.Tests;
 using osu.Framework;
 
-using var host = Host.GetSuitableDesktopHost("KebabCaseGameName-visual-tests", new HostOptions
+using var host = Host.GetSuitableDesktopHost("SPC_KB_ProjectName-visual-tests", new HostOptions
 {
     PortableInstallation = true
 });
