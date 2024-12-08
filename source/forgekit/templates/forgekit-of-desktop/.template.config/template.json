@@ -68,8 +68,7 @@
       {
         "condition": "(SkipBuildSettings)",
         "exclude": [
-          ".vscode/**/*",
-          "source/.idea/**/*"
+          ".vscode/**/*"
         ]
       },
       {
