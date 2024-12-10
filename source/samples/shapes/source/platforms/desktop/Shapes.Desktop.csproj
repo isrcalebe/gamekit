@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Project">
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ApplicationIcon>Shapes.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup Label="Project References">
+    <ProjectReference Include="..\..\game\Shapes.Game.csproj" />
+  </ItemGroup>
+  <ItemGroup Label="Resources">
+    <EmbeddedResource Include="Shapes.ico" />
+  </ItemGroup>
+  <ItemGroup Label="Windows Icons">
+    <Content Include="*.ico" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
