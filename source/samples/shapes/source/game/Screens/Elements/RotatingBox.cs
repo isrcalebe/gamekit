@@ -1,6 +1,6 @@
 using osu.Framework.Graphics.Shapes;
 
-namespace Shapes.Game.Screens.Elements;
+namespace FKSample.Game.Screens.Elements;
 
 public partial class RotatingBox : Box
 {

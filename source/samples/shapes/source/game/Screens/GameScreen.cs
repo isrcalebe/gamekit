@@ -3,10 +3,10 @@ using osu.Framework.Graphics.Containers;
 using osu.Framework.Graphics.Shapes;
 using osu.Framework.Graphics.Sprites;
 using osu.Framework.Screens;
-using Shapes.Game.Graphics;
-using Shapes.Game.Graphics.Sprites;
+using FKSample.Game.Graphics;
+using FKSample.Game.Graphics.Sprites;
 
-namespace Shapes.Game.Screens;
+namespace FKSample.Game.Screens;
 
 public partial class GameScreen : Screen
 {

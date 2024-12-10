@@ -1,7 +1,7 @@
 using osu.Framework.Graphics.Containers;
-using Shapes.Game.Graphics.Sprites;
+using FKSample.Game.Graphics.Sprites;
 
-namespace Shapes.Game.Screens.Elements;
+namespace FKSample.Game.Screens.Elements;
 
 public partial class EntityInfo : VisibilityContainer
 {

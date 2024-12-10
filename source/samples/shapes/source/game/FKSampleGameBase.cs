@@ -8,21 +8,20 @@ global using osu.Framework.Utils;
 global using osuTK;
 using osu.Framework.IO.Stores;
 using osu.Framework.Platform;
-using Shapes.Game.Resources;
+using FKSample.Game.Resources;
 
-namespace Shapes.Game;
+namespace FKSample.Game;
 
-public abstract partial class ShapesGameBase : osu.Framework.Game
+public abstract partial class FKSampleGameBase : osu.Framework.Game
 {
     private DependencyContainer? dependencies;
-
 
     protected Storage? Storage { get; set; }
 
     [BackgroundDependencyLoader]
     private void load()
     {
-        Resources.AddStore(new DllResourceStore(ShapesResourceAssemblyProvider.Assembly));
+        Resources.AddStore(new DllResourceStore(FKSampleResourceAssemblyProvider.Assembly));
 
         addFonts();
 

@@ -1,11 +1,11 @@
 using System;
 using osu.Framework.Input.Bindings;
 using osu.Framework.Input.Events;
-using Shapes.Game.Graphics.UI;
-using Shapes.Game.Input.Bindings;
-using Shapes.Game.Screens.Elements;
+using FKSample.Game.Graphics.UI;
+using FKSample.Game.Input.Bindings;
+using FKSample.Game.Screens.Elements;
 
-namespace Shapes.Game.Screens;
+namespace FKSample.Game.Screens;
 
 public partial class ElementsScreen : GameScreen, IKeyBindingHandler<GameAction>
 {

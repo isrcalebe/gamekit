@@ -1,8 +1,8 @@
 using osu.Framework.Graphics.Sprites;
 
-namespace Shapes.Game.Graphics;
+namespace FKSample.Game.Graphics;
 
-public static class ShapesFont
+public static class FKSampleFont
 {
     public const float DEFAULT_FONT_SIZE = 16.0f;
 

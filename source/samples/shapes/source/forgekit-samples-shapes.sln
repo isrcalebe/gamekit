@@ -7,17 +7,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Additional Items", "Additio
 	ProjectSection(SolutionItems) = preProject
 		..\.editorconfig = ..\.editorconfig
 		..\.globalconfig = ..\.globalconfig
-		Shapes.sln.DotSettings = Shapes.sln.DotSettings
+		forgekit-samples-shapes.sln.DotSettings = forgekit-samples-shapes.sln.DotSettings
 		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes.Game", "game\Shapes.Game.csproj", "{02CBB958-9E16-45EF-97CB-7BFCD0209B55}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FKSample.Game", "game\FKSample.Game.csproj", "{02CBB958-9E16-45EF-97CB-7BFCD0209B55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes.Game.Resources", "resources\Shapes.Game.Resources.csproj", "{42426C7D-64FF-4C8A-AF97-5D39CB074670}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FKSample.Game.Resources", "resources\FKSample.Game.Resources.csproj", "{42426C7D-64FF-4C8A-AF97-5D39CB074670}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{30D10A7D-7EF6-4548-9257-D57F7FBB78BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes.Desktop", "platforms\desktop\Shapes.Desktop.csproj", "{6666F78A-D02A-459A-A38D-337E82DB939F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FKSample.Desktop", "platforms\desktop\FKSample.Desktop.csproj", "{6666F78A-D02A-459A-A38D-337E82DB939F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

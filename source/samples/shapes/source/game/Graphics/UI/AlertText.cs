@@ -1,10 +1,9 @@
 using osu.Framework.Graphics.Containers;
 using osu.Framework.Graphics.Shapes;
 using osu.Framework.Graphics.Sprites;
-using Shapes.Game.Graphics.Sprites;
+using FKSample.Game.Graphics.Sprites;
 
-namespace Shapes.Game.Graphics.UI;
-
+namespace FKSample.Game.Graphics.UI;
 
 public partial class AlertText : CompositeDrawable
 {

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using osu.Framework.Input.Bindings;
 
-namespace Shapes.Game.Input.Bindings;
+namespace FKSample.Game.Input.Bindings;
 
 public partial class GameKeyBindingContainer : KeyBindingContainer<GameAction>
 {

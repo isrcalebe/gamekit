@@ -1,7 +1,7 @@
 using osu.Framework.Graphics.Shapes;
 using osuTK.Input;
 
-namespace Shapes.Game.Screens.Elements;
+namespace FKSample.Game.Screens.Elements;
 
 public partial class MovableCircle : Circle, IMovableEntity
 {

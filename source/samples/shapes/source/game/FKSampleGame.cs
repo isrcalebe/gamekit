@@ -1,10 +1,10 @@
 using osu.Framework.Screens;
-using Shapes.Game.Input.Bindings;
-using Shapes.Game.Screens;
+using FKSample.Game.Input.Bindings;
+using FKSample.Game.Screens;
 
-namespace Shapes.Game;
+namespace FKSample.Game;
 
-public partial class ShapesGame : ShapesGameBase
+public partial class FKSampleGame : FKSampleGameBase
 {
     private DependencyContainer? dependencies;
 

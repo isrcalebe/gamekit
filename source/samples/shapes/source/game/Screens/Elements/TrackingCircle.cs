@@ -2,7 +2,7 @@ using osu.Framework.Graphics.Containers;
 using osu.Framework.Graphics.Shapes;
 using osu.Framework.Input.Events;
 
-namespace Shapes.Game.Screens.Elements;
+namespace FKSample.Game.Screens.Elements;
 
 public partial class TrackingCircle : CompositeDrawable
 {
