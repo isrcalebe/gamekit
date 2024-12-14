@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Additional Items", "Additio
 	ProjectSection(SolutionItems) = preProject
 		..\.editorconfig = ..\.editorconfig
 		..\.globalconfig = ..\.globalconfig
-		osu-clean-templates.sln.DotSettings = osu-clean-templates.sln.DotSettings
+		forgekit.sln.DotSettings = forgekit.sln.DotSettings
 		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
