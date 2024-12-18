@@ -9,13 +9,13 @@
   </PropertyGroup>
   <PropertyGroup Label="NuGet">
     <PackageType>Template</PackageType>
-    <PackageId>ForgeKit</PackageId>
-    <Description>ForgeKit is a collection of templates for .NET and the osu!framework, providing solid boilerplate with a clean project structure.</Description>
-    <PackageTags>dotnet-new;templates;osu;framework;forgekit</PackageTags>
-    <Title>ForgeKit</Title>
+    <PackageId>GameKit</PackageId>
+    <Description>GameKit is a collection of templates for game development, providing solid boilerplate with a clean project structure.</Description>
+    <PackageTags>dotnet-new;templates;osu;framework;fna;monogame;gamekit</PackageTags>
+    <Title>GameKit</Title>
   </PropertyGroup>
   <ItemGroup Label="Content Group">
-    <Content Include="templates\**\*" Exclude="samples\**\bin\**;samples\**\obj\**" />
+    <Content Include="templates-of\**\*" Exclude="samples\**\bin\**;samples\**\obj\**" />
     <Compile Remove="**\*" />
   </ItemGroup>
 </Project>

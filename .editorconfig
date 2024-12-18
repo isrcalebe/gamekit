@@ -1,5 +1,7 @@
 root = true
 
+### Editor/IDE Settings [BEGIN] ###
+
 [*]
 charset = utf-8
 end_of_line = lf
@@ -26,7 +28,9 @@ end_of_line = crlf
 indent_style = space
 indent_size = 4
 
-### Roslyn naming styles
+### Editor/IDE Settings [END] ###
+
+### Roslyn (Naming Styles) Settings [BEGIN] ###
 
 ## PascalCase for public and protected members
 dotnet_naming_style.pascalcase.capitalization = pascal_case
@@ -92,7 +96,9 @@ dotnet_naming_rule.public_static_readonly_all_upper.severity = warning
 dotnet_naming_rule.public_static_readonly_all_upper.symbols = public_static_readonly
 dotnet_naming_rule.public_static_readonly_all_upper.style = all_upper
 
-## Roslyn Formatting Options
+### Roslyn (Naming Styles) Settings [END] ###
+
+### Roslyn (Formatting) Settings [BEGIN] ###
 
 ## Formatting - Indentation Options
 csharp_indent_case_contents = true
@@ -127,7 +133,9 @@ csharp_space_between_method_declaration_parameter_list_parentheses = false
 csharp_preserve_single_line_blocks = true
 csharp_preserve_single_line_statements = true
 
-### Roslyn language styles
+### Roslyn (Formatting) Settings [END] ###
+
+### Roslyn (Language Styles) Settings [BEGIN] ###
 
 ## Style - this. Qualification
 dotnet_style_qualification_for_field = false:warning
@@ -145,9 +153,6 @@ csharp_style_var_elsewhere = true:silent
 ## Style - Modifiers
 dotnet_style_require_accessibility_modifiers = for_non_interface_members:warning
 csharp_preferred_modifier_order = public,private,protected,internal,new,abstract,virtual,sealed,override,static,readonly,extern,unsafe,volatile,async:warning
-
-## Style - Parentheses
-# Skipped because roslyn cannot separate +-*/ with << >>
 
 ## Style - Expression Bodies
 csharp_style_expression_bodied_accessors = true:warning
@@ -202,9 +207,12 @@ csharp_style_prefer_index_operator = true:warning
 csharp_style_prefer_range_operator = true:warning
 csharp_style_prefer_switch_expression = false:none
 
-## Supressing roslyn built-in analyzers
-# Suppress: EC112
+### Roslyn (Language Styles) Settings [END] ###
+
+### Roslyn (Diagnostics) Settings [BEGIN] ###
 
 ## Private method/member is unused
 dotnet_diagnostic.IDE0051.severity = silent
 dotnet_diagnostic.IDE0052.severity = silent
+
+### Roslyn (Diagnostics) Settings [BEGIN] ###

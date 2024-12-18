@@ -6,9 +6,10 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Additional Items", "Additional Items", "{5C0530DD-BDB5-4D30-8A03-3E6DED0A75F3}"
 	ProjectSection(SolutionItems) = preProject
 		..\.editorconfig = ..\.editorconfig
-		..\.globalconfig = ..\.globalconfig
-		SampleGame.sln.DotSettings = SampleGame.sln.DotSettings
+		..\.gitignore = ..\.gitignore
+		..\.gitattributes = ..\.gitattributes
 		Directory.Build.props = Directory.Build.props
+		SampleGame.sln.DotSettings = SampleGame.sln.DotSettings
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleGame.Game", "game\SampleGame.Game.csproj", "{02CBB958-9E16-45EF-97CB-7BFCD0209B55}"

@@ -3,8 +3,8 @@
   "author": "Israel Calebe",
   "classifications": [ "Console" ],
   "name": "osu!framework desktop empty game",
-  "identity": "ForgeKit.Templates.Desktop",
-  "shortName": "forgekit-of-desktop",
+  "identity": "GameKit.TemplatesOF.Desktop",
+  "shortName": "gamekit-of-desktop",
   "tags": {
     "language": "C#",
     "type":"project"

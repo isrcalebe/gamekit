@@ -22,20 +22,4 @@
     <AnalysisModeSecurity>Default</AnalysisModeSecurity>
     <AnalysisModeUsage>Default</AnalysisModeUsage>
   </PropertyGroup>
-  <ItemGroup Label="Icon">
-    <None Include="$(MSBuildThisFileDirectory)\..\.github\assets\nupkg-icon.png">
-      <Pack>True</Pack>
-      <PackagePath>icon.png</PackagePath>
-    </None>
-  </ItemGroup>
-  <PropertyGroup Label="NuGet">
-    <Authors>Israel Calebe</Authors>
-    <Copyright>Copyright (c) 2024 Israel Calebe</Copyright>
-    <Product>GameKit</Product>
-    <PackageIcon>icon.png</PackageIcon>
-    <PackageReleaseNotes>Automated release.</PackageReleaseNotes>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/isrcalebe/gamekit</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/isrcalebe/gamekit</RepositoryUrl>
-  </PropertyGroup>
 </Project>

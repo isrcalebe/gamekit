@@ -1,0 +1,8 @@
+M:System.Object.Equals(System.Object,System.Object)~System.Boolean;Don't use object.Equals. Use IEquatable<T> or EqualityComparer<T>.Default instead.
+M:System.Object.Equals(System.Object)~System.Boolean;Don't use object.Equals. Use IEquatable<T> or EqualityComparer<T>.Default instead.
+M:System.ValueType.Equals(System.Object)~System.Boolean;Don't use object.Equals(Fallbacks to ValueType). Use IEquatable<T> or EqualityComparer<T>.Default instead.
+T:System.IComparable;Don't use non-generic IComparable. Use generic version instead.
+M:System.Threading.Tasks.Task.Wait();Don't use Task.Wait. Use Task.WaitSafely() to ensure we avoid deadlocks.
+M:System.Guid.#ctor;Probably meaning to use Guid.NewGuid() instead. If actually wanting empty, use Guid.Empty.
+P:System.Threading.Tasks.Task`1.Result;Don't use Task.Result. Use Task.GetResultSafely() to ensure we avoid deadlocks.
+M:System.Threading.ManualResetEventSlim.Wait();Specify a timeout to avoid waiting forever.
