@@ -3,7 +3,7 @@
   "author": "Israel Calebe",
   "classifications": [ "Console" ],
   "name": "osu!framework desktop empty game",
-  "identity": "GameKit.TemplatesOF.Desktop",
+  "identity": "GameKit.Templates.OsuFramework.Desktop",
   "shortName": "gamekit-of-desktop",
   "tags": {
     "language": "C#",
