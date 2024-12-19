@@ -2,8 +2,8 @@
   <a href='https://github.com/isrcalebe/gamekit#gh-dark-mode-only' target='_blank' rel='noopener noreferrer'>
     <img src='./assets/logo-light.svg' alt='isrcalebe/gamekit'>
   </a>
-  <a href='https://github.com/isrcalebe/gamekit#gh-light-gamekit-only' target='_blank' rel='noopener noreferrer'>
-    <img src='./assets/logo-dark.svg' alt='isrcalebe/forgekit'>
+  <a href='https://github.com/isrcalebe/gamekit#gh-light-mode-only' target='_blank' rel='noopener noreferrer'>
+    <img src='./assets/logo-dark.svg' alt='isrcalebe/gamekit'>
   </a>
 </p>
 
