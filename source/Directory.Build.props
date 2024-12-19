@@ -22,10 +22,14 @@
     <AnalysisModeSecurity>Default</AnalysisModeSecurity>
     <AnalysisModeUsage>Default</AnalysisModeUsage>
   </PropertyGroup>
-  <ItemGroup Label="Icon">
+  <ItemGroup Label="Icon and README">
     <None Include="$(MSBuildThisFileDirectory)\..\.github\assets\nupkg-icon.png">
       <Pack>True</Pack>
       <PackagePath>icon.png</PackagePath>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)\..\.github\README.nuget.md">
+      <Pack>True</Pack>
+      <PackagePath>README.md</PackagePath>
     </None>
   </ItemGroup>
   <PropertyGroup Label="NuGet">
@@ -33,8 +37,8 @@
     <Copyright>Copyright (c) 2024 Israel Calebe</Copyright>
     <Product>GameKit</Product>
     <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageReleaseNotes>Automated release.</PackageReleaseNotes>
-    <PackageReadmeFile>$(MSBuildThisFileDirectory)\..\.github\README.nuget.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/isrcalebe/gamekit</PackageProjectUrl>
     <RepositoryUrl>https://github.com/isrcalebe/gamekit</RepositoryUrl>
