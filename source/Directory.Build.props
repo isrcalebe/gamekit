@@ -34,6 +34,7 @@
     <Product>GameKit</Product>
     <PackageIcon>icon.png</PackageIcon>
     <PackageReleaseNotes>Automated release.</PackageReleaseNotes>
+    <PackageReadmeFile>$(MSBuildThisFileDirectory)\..\.github\README.nuget.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/isrcalebe/gamekit</PackageProjectUrl>
     <RepositoryUrl>https://github.com/isrcalebe/gamekit</RepositoryUrl>

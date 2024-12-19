@@ -1,11 +1,4 @@
-<p align='center'>
-  <a href='https://github.com/isrcalebe/gamekit#gh-dark-mode-only' target='_blank' rel='noopener noreferrer'>
-    <img src='./assets/logo-light.svg' alt='isrcalebe/gamekit'>
-  </a>
-  <a href='https://github.com/isrcalebe/gamekit#gh-light-gamekit-only' target='_blank' rel='noopener noreferrer'>
-    <img src='./assets/logo-dark.svg' alt='isrcalebe/forgekit'>
-  </a>
-</p>
+![GameKit](https://raw.githubusercontent.com/isrcalebe/gamekit/refs/heads/main/.github/assets/logo-dark.svg)
 
 **GameKit** is a collection of templates for [.NET](https://dot.net) and game development, providing solid boilerplate with a clean project structure.
 
@@ -15,8 +8,8 @@ This template collection is designed to go beyond the typical expectations of a 
 
 Projects are available as starting points for the following frameworks:
 
-- [osu!framework](https://github.com/ppy/osu-framework): [`GameKit.Templates.OsuFramework`](../source/templates/osu-framework)
-- [FNA](https://github.com/FNA-XNA/FNA): [`GameKit.Templates.FNA`](../source/templates/fna/)
+- [osu!framework](https://github.com/ppy/osu-framework): [`GameKit.Templates.OsuFramework`](https://www.nuget.org/packages/GameKit.Templates.OsuFramework)
+- [FNA](https://github.com/FNA-XNA/FNA): [`GameKit.Templates.FNA`](https://www.nuget.org/packages/GameKit.Templates.FNA)
 
 > Each template collection includes a dedicated README with additional details.
 
