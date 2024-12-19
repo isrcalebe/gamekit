@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Project">
+    <TargetFramework>net8.0</TargetFramework>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <NoWarn>NU5128</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Label="NuGet">
+    <PackageType>Template</PackageType>
+    <PackageId>GameKit.Templates.FNA</PackageId>
+    <Description>GameKit is a collection of templates for game development, providing solid boilerplate with a clean project structure.</Description>
+    <PackageTags>dotnet-new;templates;xna;fna;monogame;gamekit</PackageTags>
+    <Title>GameKit</Title>
+  </PropertyGroup>
+  <ItemGroup Label="Content Group">
+    <Content Include="templates\**\*" Exclude="samples\**\bin\**;samples\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+</Project>

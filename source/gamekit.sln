@@ -12,7 +12,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Additional Items", "Additio
 		gamekit.sln.DotSettings = gamekit.sln.DotSettings
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameKit", "gamekit\GameKit.csproj", "{BF7D96B8-0995-44B1-91DD-01CF351DDC9A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{808186BE-9BD0-DD1D-D574-36EEAD1E7F8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameKit.Templates.OsuFramework", "templates\osu-framework\GameKit.Templates.OsuFramework.csproj", "{6B3DDF2C-BDF7-4BF3-B388-95477F60885A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameKit.Templates.FNA", "templates\fna\GameKit.Templates.FNA.csproj", "{DCEC2B7E-7BBB-4DB7-8ABD-F6B4C3279578}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,9 +27,17 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BF7D96B8-0995-44B1-91DD-01CF351DDC9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF7D96B8-0995-44B1-91DD-01CF351DDC9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF7D96B8-0995-44B1-91DD-01CF351DDC9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF7D96B8-0995-44B1-91DD-01CF351DDC9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B3DDF2C-BDF7-4BF3-B388-95477F60885A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B3DDF2C-BDF7-4BF3-B388-95477F60885A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B3DDF2C-BDF7-4BF3-B388-95477F60885A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B3DDF2C-BDF7-4BF3-B388-95477F60885A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCEC2B7E-7BBB-4DB7-8ABD-F6B4C3279578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCEC2B7E-7BBB-4DB7-8ABD-F6B4C3279578}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCEC2B7E-7BBB-4DB7-8ABD-F6B4C3279578}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCEC2B7E-7BBB-4DB7-8ABD-F6B4C3279578}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B3DDF2C-BDF7-4BF3-B388-95477F60885A} = {808186BE-9BD0-DD1D-D574-36EEAD1E7F8F}
+		{DCEC2B7E-7BBB-4DB7-8ABD-F6B4C3279578} = {808186BE-9BD0-DD1D-D574-36EEAD1E7F8F}
 	EndGlobalSection
 EndGlobal
