@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Project">
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyTitle>GameKit FNA Libraries</AssemblyTitle>
+    <AssemblyName>GameKit.FNA.NativeLibs</AssemblyName>
+    <NoWarn>$(NoWarn);NU5109</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Label="NuGet">
+    <IsPackable>true</IsPackable>
+    <Title>GameKit FNA Libraries</Title>
+    <PackageId>GameKit.FNA.NativeLibs</PackageId>
+    <Description>The native libraries used by GameKit for building FNA-based games, providing essential functionality and performance optimizations.</Description>
+    <PackageTags>gamekit;game;framework;fna;monogame;native</PackageTags>
+    <PackageReadmePath>$(MSBuildThisFileDirectory).nuget\README.nuget.md</PackageReadmePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="runtimes\**\native\*">
+      <Pack>true</Pack>
+      <PackagePath>runtimes</PackagePath>
+    </None>
+    <None Include="_._">
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
