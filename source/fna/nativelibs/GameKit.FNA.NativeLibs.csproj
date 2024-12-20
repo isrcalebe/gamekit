@@ -12,16 +12,20 @@
     <PackageId>GameKit.FNA.NativeLibs</PackageId>
     <Description>The native libraries used by GameKit for building FNA-based games, providing essential functionality and performance optimizations.</Description>
     <PackageTags>gamekit;game;framework;fna;monogame;native</PackageTags>
-    <PackageReadmePath>$(MSBuildThisFileDirectory).nuget\README.nuget.md</PackageReadmePath>
+    <PackageReadmePath>README.nuget.md</PackageReadmePath>
   </PropertyGroup>
   <ItemGroup>
     <None Include="runtimes\**\native\*">
       <Pack>true</Pack>
       <PackagePath>runtimes</PackagePath>
     </None>
-    <None Include="_._">
+    <None Include="_._" Visible="false">
       <Pack>true</Pack>
       <PackagePath>lib\$(TargetFramework)</PackagePath>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory).nuget\README.md" Visible="false">
+      <Pack>True</Pack>
+      <PackagePath>README.nuget.md</PackagePath>
     </None>
   </ItemGroup>
 </Project>

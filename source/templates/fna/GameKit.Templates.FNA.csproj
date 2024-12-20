@@ -10,6 +10,7 @@
   <PropertyGroup Label="NuGet">
     <PackageType>Template</PackageType>
     <PackageId>GameKit.Templates.FNA</PackageId>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Description>GameKit is a collection of templates for game development, providing solid boilerplate with a clean project structure.</Description>
     <PackageTags>dotnet-new;templates;xna;fna;monogame;gamekit</PackageTags>
     <Title>GameKit</Title>
