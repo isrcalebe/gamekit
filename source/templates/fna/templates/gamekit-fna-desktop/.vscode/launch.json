@@ -1,0 +1,89 @@
+{
+  "version": "2.0.0",
+  "configurations": [
+    {
+      "name": "Desktop (Debug, SDL2)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "dotnet",
+      "cwd": "${workspaceRoot}/source/",
+      "args": [
+        "${workspaceRoot}/source/platforms/desktop/bin/Debug/net8.0/SampleGame.Desktop.dll"
+      ],
+      "preLaunchTask": "Build (Desktop, Debug)",
+      "env": {
+        "OSU_SDL3": "0"
+      }
+    },
+    {
+      "name": "Desktop (Debug, SDL3)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "dotnet",
+      "cwd": "${workspaceRoot}/source/",
+      "args": [
+        "${workspaceRoot}/source/platforms/desktop/bin/Debug/net8.0/SampleGame.Desktop.dll"
+      ],
+      "preLaunchTask": "Build (Desktop, Debug)",
+      "env": {
+        "OSU_SDL3": "1"
+      }
+    },
+    {
+      "name": "Desktop (Release, SDL2)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "dotnet",
+      "cwd": "${workspaceRoot}/source/",
+      "args": [
+        "${workspaceRoot}/source/platforms/desktop/bin/Release/net8.0/SampleGame.Desktop.dll"
+      ],
+      "preLaunchTask": "Build (Desktop, Release)",
+      "env": {
+        "OSU_SDL3": "0"
+      }
+    },
+    {
+      "name": "Desktop (Release, SDL3)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "dotnet",
+      "cwd": "${workspaceRoot}/source/",
+      "args": [
+        "${workspaceRoot}/source/platforms/desktop/bin/Release/net8.0/SampleGame.Desktop.dll"
+      ],
+      "preLaunchTask": "Build (Desktop, Release)",
+      "env": {
+        "OSU_SDL3": "1"
+      }
+    },
+    {
+      "name": "Visual Tests (Debug, SDL2)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "dotnet",
+      "cwd": "${workspaceRoot}/source/",
+      "args": [
+        "${workspaceRoot}/source/tests/game/bin/Debug/net8.0/SampleGame.Game.Tests.dll"
+      ],
+      "preLaunchTask": "Build (Desktop, Debug)",
+      "env": {
+        "OSU_SDL3": "0"
+      }
+    },
+    {
+      "name": "Visual Tests (Debug, SDL3)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "dotnet",
+      "cwd": "${workspaceRoot}/source/",
+      "args": [
+        "${workspaceRoot}/source/tests/game/bin/Debug/net8.0/SampleGame.Game.Tests.dll"
+      ],
+      "preLaunchTask": "Build (Desktop, Debug)",
+      "env": {
+        "OSU_SDL3": "1"
+      }
+    }
+  ]
+}
