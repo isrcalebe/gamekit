@@ -14,17 +14,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Additional Items", "Additio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{808186BE-9BD0-DD1D-D574-36EEAD1E7F8F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{809F86A1-1C4C-B159-0CD4-DF9D33D876CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Implementations", "Implementations", "{12886453-F3FA-7078-BE77-D3FAE848C90E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FNA", "FNA", "{393957E4-D5AD-DE3E-615E-7B6D97626974}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameKit.Templates.OsuFramework", "templates\osu-framework\GameKit.Templates.OsuFramework.csproj", "{6B3DDF2C-BDF7-4BF3-B388-95477F60885A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameKit.Templates.FNA", "templates\fna\GameKit.Templates.FNA.csproj", "{DCEC2B7E-7BBB-4DB7-8ABD-F6B4C3279578}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FNA Additional Libraries", "FNA Additional Libraries", "{1720AAC5-A168-DF2D-6625-EEBBE19EE6D8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameKit.FNA.NativeLibs", "fna\nativelibs\GameKit.FNA.NativeLibs.csproj", "{665224A1-F844-4A8A-A70B-542BF61A4835}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "O!F Additional Libraries", "O!F Additional Libraries", "{297F8D66-AF97-A9B5-E19F-2494B115EACA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameKit.OsuFramework.FontUsageGenerator", "osu-framework\font-usage-generator\GameKit.OsuFramework.FontUsageGenerator.csproj", "{1FA6511A-4244-4A11-B0B8-7EB7638EF4ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameKit.FNA.NativeLibs", "packages\implementations\fna\nativelibs\GameKit.FNA.NativeLibs.csproj", "{4C5134CB-B246-42AD-8AE0-8022C530D2AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,14 +40,10 @@ Global
 		{DCEC2B7E-7BBB-4DB7-8ABD-F6B4C3279578}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCEC2B7E-7BBB-4DB7-8ABD-F6B4C3279578}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCEC2B7E-7BBB-4DB7-8ABD-F6B4C3279578}.Release|Any CPU.Build.0 = Release|Any CPU
-		{665224A1-F844-4A8A-A70B-542BF61A4835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{665224A1-F844-4A8A-A70B-542BF61A4835}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{665224A1-F844-4A8A-A70B-542BF61A4835}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{665224A1-F844-4A8A-A70B-542BF61A4835}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1FA6511A-4244-4A11-B0B8-7EB7638EF4ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1FA6511A-4244-4A11-B0B8-7EB7638EF4ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1FA6511A-4244-4A11-B0B8-7EB7638EF4ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1FA6511A-4244-4A11-B0B8-7EB7638EF4ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C5134CB-B246-42AD-8AE0-8022C530D2AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C5134CB-B246-42AD-8AE0-8022C530D2AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C5134CB-B246-42AD-8AE0-8022C530D2AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C5134CB-B246-42AD-8AE0-8022C530D2AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,7 +51,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6B3DDF2C-BDF7-4BF3-B388-95477F60885A} = {808186BE-9BD0-DD1D-D574-36EEAD1E7F8F}
 		{DCEC2B7E-7BBB-4DB7-8ABD-F6B4C3279578} = {808186BE-9BD0-DD1D-D574-36EEAD1E7F8F}
-		{665224A1-F844-4A8A-A70B-542BF61A4835} = {1720AAC5-A168-DF2D-6625-EEBBE19EE6D8}
-		{1FA6511A-4244-4A11-B0B8-7EB7638EF4ED} = {297F8D66-AF97-A9B5-E19F-2494B115EACA}
+		{12886453-F3FA-7078-BE77-D3FAE848C90E} = {809F86A1-1C4C-B159-0CD4-DF9D33D876CE}
+		{393957E4-D5AD-DE3E-615E-7B6D97626974} = {12886453-F3FA-7078-BE77-D3FAE848C90E}
+		{4C5134CB-B246-42AD-8AE0-8022C530D2AF} = {393957E4-D5AD-DE3E-615E-7B6D97626974}
 	EndGlobalSection
 EndGlobal
