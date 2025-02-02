@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Israel Calebe",
+  "classifications": [ "Library", "Test" ],
+  "name": "osu!framework class library",
+  "identity": "GameKit.Templates.OsuFramework.ClassLib",
+  "shortName": "gamekit-of-classlib",
+  "tags": {
+    "language": "C#",
+    "type":"project"
+  },
+  "sourceName": "SampleLib",
+  "preferNameDirectory": true,
+  "symbols": {
+    "SPC_KB_ProjectName": {
+      "type": "derived",
+      "valueSource": "name",
+      "valueTransform": "kebabCase",
+      "fileRename": "SPC_KB_ProjectName",
+      "replaces": "SPC_KB_ProjectName"
+    }
+  },
+  "sources": [{ }],
+  "constraints": {
+    "sdk-only": {
+      "type": "host",
+      "args": [{
+        "hostname": "dotnetcli",
+        "version": "[8.0,)"
+      }]
+    }
+  }
+}

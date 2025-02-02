@@ -24,7 +24,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameKit.Templates.OsuFramew
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameKit.Templates.FNA", "templates\fna\GameKit.Templates.FNA.csproj", "{DCEC2B7E-7BBB-4DB7-8ABD-F6B4C3279578}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameKit.FNA.NativeLibs", "packages\implementations\fna\nativelibs\GameKit.FNA.NativeLibs.csproj", "{4C5134CB-B246-42AD-8AE0-8022C530D2AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameKit.FNA.NativeLibs", "libraries\implementations\fna\nativelibs\GameKit.FNA.NativeLibs.csproj", "{4C5134CB-B246-42AD-8AE0-8022C530D2AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
