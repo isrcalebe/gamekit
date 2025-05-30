@@ -1,13 +1,13 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "Israel Calebe",
-  "classifications": [ "Console" ],
+  "classifications": ["Console"],
   "name": "osu!framework desktop empty game",
   "identity": "GameKit.Templates.OsuFramework.Desktop",
   "shortName": "gamekit-of-desktop",
   "tags": {
     "language": "C#",
-    "type":"project"
+    "type": "project"
   },
   "sourceName": "SampleGame",
   "preferNameDirectory": true,
@@ -48,6 +48,24 @@
       "description": "When enabled, the SMW font is added to the resources.",
       "value": false
     },
+    "NoGitIgnore": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "When enabled, the .gitignore file is not created.",
+      "value": false
+    },
+    "NoGitAttributes": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "When enabled, the .gitattributes file is not created.",
+      "value": false
+    },
+    "ProjectNoUsesGlobalUsings": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "When enabled, the project does not use global usings in Usings.g.cs, but instead uses them in the game base class.",
+      "value": true
+    },
     "SPC_KB_ProjectName": {
       "type": "derived",
       "valueSource": "name",
@@ -59,39 +77,71 @@
       "value": "(IncludeFontInter || IncludeFontMonogram || IncludeFontSMW)"
     }
   },
-  "sources": [{
-    "modifiers": [
-      {
-        "condition": "(SkipVisualTests)",
-        "exclude": [ "source/tests/**/*"]
-      },
-      {
-        "condition": "(SkipBuildSettings)",
-        "exclude": [
-          ".vscode/**/*"
-        ]
-      },
-      {
-        "condition": "(!IncludeFontInter)",
-        "exclude": [ "source/resources/Fonts/Inter/**/*" ]
-      },
-      {
-        "condition": "(!IncludeFontMonogram)",
-        "exclude": [ "source/resources/Fonts/Monogram/**/*" ]
-      },
-      {
-        "condition": "(!IncludeFontSMW)",
-        "exclude": [ "source/resources/Fonts/SMW/**/*" ]
-      }
-    ]
-  }],
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "condition": "(SkipVisualTests)",
+          "exclude": ["source/tests/**/*"]
+        },
+        {
+          "condition": "(SkipBuildSettings)",
+          "exclude": [".vscode/**/*"]
+        },
+        {
+          "condition": "(!IncludeFontInter)",
+          "exclude": ["source/resources/Fonts/Inter/**/*"]
+        },
+        {
+          "condition": "(!IncludeFontMonogram)",
+          "exclude": ["source/resources/Fonts/Monogram/**/*"]
+        },
+        {
+          "condition": "(!IncludeFontSMW)",
+          "exclude": ["source/resources/Fonts/SMW/**/*"]
+        },
+        {
+          "condition": "(NoGitIgnore)",
+          "exclude": [".gitignore"]
+        },
+        {
+          "condition": "(NoGitAttributes)",
+          "exclude": [".gitattributes"]
+        },
+        {
+          "condition": "(ProjectNoUsesGlobalUsings)",
+          "exclude": ["source/game/Usings.g.cs"]
+        }
+      ]
+    }
+  ],
   "constraints": {
     "sdk-only": {
       "type": "host",
-      "args": [{
-        "hostname": "dotnetcli",
-        "version": "[8.0,)"
-      }]
+      "args": [
+        {
+          "hostname": "dotnetcli",
+          "version": "[8.0,)"
+        }
+      ]
     }
-  }
+  },
+  "postActions": [
+    {
+      "actionId": "3A7C4B45-1F5D-4A30-959A-51B88E82B5D2",
+      "args": {
+        "executable": "git",
+        "args": "init",
+        "redirectStandardError": true,
+        "redirectStandardOutput": true
+      },
+      "manualInstructions": [
+        {
+          "text": "Run 'git init' to initialize a git repository."
+        }
+      ],
+      "continueOnError": true,
+      "description": "Run 'git init' to initialize a git repository."
+    }
+  ]
 }

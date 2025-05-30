@@ -1,28 +1,44 @@
 {
   "symbolInfo": {
     "PreferNearestTextureFiltering": {
-      "longName": "prefer-nearest-texture-filtering",
-      "shortName": "nearest-filtering"
+      "longName": "enable-nearest-texture-filtering",
+      "shortName": "nearest"
     },
     "SkipVisualTests": {
-      "longName": "skip-visual-tests",
-      "shortName": "no-tests"
+      "longName": "exclude-visual-tests",
+      "shortName": "no-vtests"
     },
     "SkipBuildSettings": {
-      "longName": "skip-build-settings",
-      "shortName": "no-build-settings"
+      "longName": "exclude-build-settings",
+      "shortName": "no-bsettings"
     },
     "IncludeFontInter": {
-      "longName": "include-font-inter",
-      "shortName": "font-inter"
+      "longName": "add-font-inter",
+      "shortName": "inter"
     },
     "IncludeFontMonogram": {
-      "longName": "include-font-monogram",
-      "shortName": "font-monogram"
+      "longName": "add-font-monogram",
+      "shortName": "monogram"
     },
     "IncludeFontSMW": {
-      "longName": "include-font-smw",
-      "shortName": "font-smw"
+      "longName": "add-font-smw",
+      "shortName": "smw"
+    },
+    "GitInit": {
+      "longName": "initialize-git",
+      "shortName": "git"
+    },
+    "NoGitIgnore": {
+      "longName": "exclude-gitignore",
+      "shortName": "no-gi"
+    },
+    "NoGitAttributes": {
+      "longName": "exclude-gitattributes",
+      "shortName": "no-ga"
+    },
+    "ProjectNoUsesGlobalUsings": {
+      "longName": "no-global-usings",
+      "shortName": "no-usings"
     }
   }
 }

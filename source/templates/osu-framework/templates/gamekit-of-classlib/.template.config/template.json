@@ -1,17 +1,29 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "Israel Calebe",
-  "classifications": [ "Library", "Test" ],
+  "classifications": ["Library", "Test"],
   "name": "osu!framework class library",
   "identity": "GameKit.Templates.OsuFramework.ClassLib",
   "shortName": "gamekit-of-classlib",
   "tags": {
     "language": "C#",
-    "type":"project"
+    "type": "project"
   },
   "sourceName": "SampleLib",
   "preferNameDirectory": true,
   "symbols": {
+    "NoGitIgnore": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "When enabled, the .gitignore file is not created.",
+      "value": false
+    },
+    "NoGitAttributes": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "When enabled, the .gitattributes file is not created.",
+      "value": false
+    },
     "SPC_KB_ProjectName": {
       "type": "derived",
       "valueSource": "name",
@@ -20,14 +32,47 @@
       "replaces": "SPC_KB_ProjectName"
     }
   },
-  "sources": [{ }],
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "condition": "(NoGitIgnore)",
+          "exclude": [".gitignore"]
+        },
+        {
+          "condition": "(NoGitAttributes)",
+          "exclude": [".gitattributes"]
+        }
+      ]
+    }
+  ],
   "constraints": {
     "sdk-only": {
       "type": "host",
-      "args": [{
-        "hostname": "dotnetcli",
-        "version": "[8.0,)"
-      }]
+      "args": [
+        {
+          "hostname": "dotnetcli",
+          "version": "[8.0,)"
+        }
+      ]
     }
-  }
+  },
+  "postActions": [
+    {
+      "actionId": "3A7C4B45-1F5D-4A30-959A-51B88E82B5D2",
+      "args": {
+        "executable": "git",
+        "args": "init",
+        "redirectStandardError": true,
+        "redirectStandardOutput": true
+      },
+      "manualInstructions": [
+        {
+          "text": "Run 'git init' to initialize a git repository."
+        }
+      ],
+      "continueOnError": true,
+      "description": "Run 'git init' to initialize a git repository."
+    }
+  ]
 }

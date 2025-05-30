@@ -1,0 +1,19 @@
+{
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.sln": "${capture}.sln.DotSettings, Directory.Build.props, Directory.Build.targets",
+
+    "*.bin": "${capture}_*.png",
+    "*.fnt": "${capture}_*.png"
+  },
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/bin": true,
+    "**/obj": true,
+  }
+}

@@ -12,7 +12,6 @@ public class SampleGameConfigManager : IniConfigManager<SampleGameSetting>
     public SampleGameConfigManager(Storage storage, IDictionary<SampleGameSetting, object>? defaultOverrides = null)
         : base(storage, defaultOverrides)
     {
-        PerformSave();
     }
 
     protected override void InitialiseDefaults()
