@@ -9,7 +9,6 @@ This template collection is designed to go beyond the typical expectations of a 
 Projects are available as starting points for the following frameworks:
 
 - [osu!framework](https://github.com/ppy/osu-framework): [`GameKit.Templates.OsuFramework`](https://www.nuget.org/packages/GameKit.Templates.OsuFramework)
-- [FNA](https://github.com/FNA-XNA/FNA): [`GameKit.Templates.FNA`](https://www.nuget.org/packages/GameKit.Templates.FNA)
 
 > Each template collection includes a dedicated README with additional details.
 
