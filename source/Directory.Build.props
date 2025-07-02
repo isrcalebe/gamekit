@@ -34,7 +34,7 @@
   </ItemGroup>
   <PropertyGroup Label="NuGet">
     <Authors>Israel Calebe</Authors>
-    <Copyright>Copyright (c) 2024 Israel Calebe</Copyright>
+    <Copyright>Copyright (c) 2025 Israel Calebe</Copyright>
     <Product>GameKit</Product>
     <PackageIcon>icon.png</PackageIcon>
     <PackageReleaseNotes>Automated release.</PackageReleaseNotes>
